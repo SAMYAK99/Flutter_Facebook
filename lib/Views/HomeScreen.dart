@@ -1,4 +1,6 @@
+import 'package:facebookflutter/Widgets/create_post_container.dart';
 import 'package:facebookflutter/Widgets/widgets.dart';
+import 'package:facebookflutter/data/data.dart';
 import 'package:flutter/material.dart';
 import 'package:facebookflutter/config/palette.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
@@ -31,7 +33,10 @@ class HomeScreen extends StatelessWidget {
                   iconSize: 30,
                   onPressed: () => print('Massenger Button Tapped')),
             ],
-          )
+          ),
+          SliverToBoxAdapter(
+            child: CreatePostContainer(currentUser: currentUser),
+          ),
         ],
       ),
     );
