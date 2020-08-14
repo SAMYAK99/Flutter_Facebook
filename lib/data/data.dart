@@ -3,16 +3,16 @@ import 'package:facebookflutter/models/story_model.dart';
 import 'package:facebookflutter/models/user_model.dart';
 
 final User currentUser = User(
-  name: 'Marcus Ng',
+  name: 'Sky Walker',
   imageUrl:
-      'https://images.unsplash.com/photo-1578133671540-edad0b3d689e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80',
+      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
 );
 
 final List<User> onlineUsers = [
   User(
-    name: 'David Brooks',
+    name: 'Sam Fisher',
     imageUrl:
-        'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        'https://images.unsplash.com/photo-1578133671540-edad0b3d689e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80',
   ),
   User(
     name: 'Jane Doe',
