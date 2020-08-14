@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:facebookflutter/Widgets/profile_avatar.dart';
+import 'package:facebookflutter/Widgets/responsive.dart';
 import 'package:facebookflutter/config/palette.dart';
 import 'package:facebookflutter/models/post_model.dart';
 import 'package:flutter/material.dart';
@@ -15,12 +16,16 @@ class PostContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bool isDesktop = Responsive.isDesktop(context);
     return Card(
       margin: EdgeInsets.symmetric(
         vertical: 5.0,
-        horizontal: 0.0,
+        horizontal: isDesktop ? 5.0 : 0.0,
       ),
-      elevation: 0.0,
+      elevation: isDesktop ? 1.0 : 0.0,
+      shape: isDesktop
+          ? RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0))
+          : null,
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 8.0),
         color: Colors.white,
