@@ -1,4 +1,3 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:facebookflutter/Widgets/profile_avatar.dart';
 import 'package:facebookflutter/Widgets/responsive.dart';
 import 'package:facebookflutter/models/user_model.dart';

@@ -16,6 +16,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  // Saving the state when the responsive widget is changed
   final TrackingScrollController _trackingScrollController =
       TrackingScrollController();
 

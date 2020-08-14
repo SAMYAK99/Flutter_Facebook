@@ -6,6 +6,8 @@ import 'package:facebookflutter/data/data.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
+// Bottom Navigation Bars as Tab Bars
+
 class NavScreen extends StatefulWidget {
   @override
   _NavScreenState createState() => _NavScreenState();
